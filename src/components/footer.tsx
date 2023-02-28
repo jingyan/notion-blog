@@ -4,21 +4,15 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <span>Deploy your own!</span>
-        <ExtLink href="https://vercel.com/new/git/external?repository-url=https://github.com/ijjk/notion-blog/tree/main&project-name=notion-blog&repository-name=notion-blog">
-          <img
-            src="https://vercel.com/button"
-            height={46}
-            width={132}
-            alt="deploy to Vercel button"
-          />
-        </ExtLink>
-        <span>
-          or{' '}
-          <ExtLink href="https://github.com/ijjk/notion-blog">
-            view source
-          </ExtLink>
-        </span>
+        <div className="explanation">
+          <p>
+            This is a statically generated{' '}
+            <ExtLink href="https://nextjs.org">Next.js</ExtLink> site with a{' '}
+            <ExtLink href="https://notion.so">Notion</ExtLink> powered blog that
+            is deployed with <ExtLink href="https://vercel.com">Vercel</ExtLink>
+            .
+          </p>
+        </div>
       </footer>
     </>
   )
